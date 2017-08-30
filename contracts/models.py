@@ -14,3 +14,6 @@ class Contract(models.Model):
     user_from = models.CharField(max_length=200)
     user_to = models.CharField(max_length=200)
     description = models.TextField()
+
+    def __unicode__(self):
+        return self.title
