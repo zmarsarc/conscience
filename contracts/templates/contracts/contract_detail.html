@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ contract.title }}</title>
+</head>
+<body>
+    <h1>{{ contract.title }}</h1>
+    <div>
+        <span>{{ contract.pub_date }}</span>
+        <span>from {{ contract.user_from }}</span>
+        <span>to {{ contract.user_to }}</span>
+    </div>
+    <div>
+        <span>amount: {{ contract.amount }}</span>
+        <span>status: {{ contract.untreated }}</span>
+    </div>
+    <div>
+        {{ contract.description }}
+    </div>
+</body>
+</html>
